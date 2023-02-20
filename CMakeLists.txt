@@ -638,6 +638,23 @@ sc_add_server_plugin(
   "${VA1Pole_schelp_files}"
 )
 
+# Fverb
+set(
+  Fverb_cpp_files
+  plugins/Fverb/fverb.cpp
+)
+
+set(
+  Fverb_sc_files
+  plugins/Fverb/Fverb.sc
+)
+
+set(
+  Fverb_schelp_files
+  plugins/Fverb/Fverb.schelp
+)
+
+
 #--------------------------------------------------------------------#
 #                      DAISY-DEPENDENT-PLUGINS                       #
 #--------------------------------------------------------------------#
