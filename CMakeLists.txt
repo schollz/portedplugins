@@ -65,17 +65,17 @@ message(STATUS "Install directory set to: ${CMAKE_INSTALL_PREFIX}")
 
 ####################################################################################################
 # options
-option(SUPERNOVA "Build plugins for supernova" ON)
+option(SUPERNOVA "Build plugins for supernova" OFF)
 option(SCSYNTH "Build plugins for scsynth" ON)
 option(NATIVE "Optimize for native architecture" OFF)
 option(STRICT "Use strict warning flags" OFF)
 option(NOVA_SIMD "Build plugins with nova-simd support." ON)
 
 # Exclude / include certain experimental / work in progress plugins
-option(USE_DAISYSP_LIB "Build plugins that depend on the DaisySP library" ON)
+option(USE_DAISYSP_LIB "Build plugins that depend on the DaisySP library" OFF)
 option(INCPULSE "Include AnalogPulseShaper plugin" OFF)
 option(INCWERNER "Include Werner plugin" OFF)
-option(INCPHASORMODAL "Include PhasorModal plugin" ON)
+option(INCPHASORMODAL "Include PhasorModal plugin" OFF)
 
 ####################################################################################################
 # include libraries
