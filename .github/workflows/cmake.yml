@@ -101,7 +101,7 @@ jobs:
     - name: Upload binaries to release
       uses: svenstaro/upload-release-action@v2
       with:
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        repo_token: ${{ secrets.RELEASE }}
         file: ${{github.workspace}}/build/PortedPlugins-${{runner.os}}.zip
         asset_name: PortedPlugins-${{runner.os}}.zip
         prerelease: true
