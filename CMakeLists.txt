@@ -138,6 +138,33 @@ sc_add_server_plugin(
   "${LPG_schelp_files}"
 )
 
+
+# XPlayBuf
+set(
+  XPlayBuf_cpp_files
+  plugins/XPlayBuf/XPlayBuf.cpp
+  plugins/XPlayBuf/XPlayBuf.hpp
+)
+
+set(
+  XPlayBuf_sc_files
+  plugins/XPlayBuf/XPlayBuf.sc
+)
+
+set(
+  XPlayBuf_schelp_files
+  plugins/XPlayBuf/XPlayBuf.schelp
+)
+
+sc_add_server_plugin(
+  "${project_name}" # desination directory
+  "XPlayBuf" # target name
+  "${XPlayBuf_cpp_files}"
+  "${XPlayBuf_sc_files}"
+  "${XPlayBuf_schelp_files}"
+)
+
+
 # Chen
 set(
   Chen_cpp_files
