@@ -688,6 +688,29 @@ sc_add_server_plugin(
 )
 
 
+# Fverb2
+set(
+  Fverb2_cpp_files
+  plugins/Fverb2/fverb2.cpp
+)
+set(
+  Fverb2_sc_files
+  plugins/Fverb2/Fverb2.sc
+)
+set(
+  Fverb2_schelp_files
+  plugins/Fverb2/Fverb2.schelp
+)
+
+sc_add_server_plugin(
+  "${project_name}" # destination directory
+  "Fverb2" # target name
+  "${Fverb2_cpp_files}"
+  "${Fverb2_sc_files}"
+  "${Fverb2_schelp_files}"
+)
+
+
 
 #--------------------------------------------------------------------#
 #                      DAISY-DEPENDENT-PLUGINS                       #
